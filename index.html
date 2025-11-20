@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Short demo site for Principles of Information Systems.">
   <title>Principles of Information Systems — Demo</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:,">
 </head>
 <body>
@@ -15,36 +15,22 @@
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
       <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/projects.html">Projects</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" role="region" aria-labelledby="hero-title">
-      <div class="container">
-        <h2 id="hero-title">Core concepts of information systems</h2>
-        <p>Concise explanations and examples for students and curious learners.</p>
-        <a class="btn" href="#topics">Explore Topics</a>
+      <div class="container profile-section">
+        <img src="assets/profile.jpg" alt="Magsud Abbaszade" class="profile-photo">
+        <div class="profile-bio">
+          <h2 id="hero-title">Magsud Abbaszade</h2>
+          <p>17 years old, IT freshman at ADA University</p>
+        </div>
       </div>
     </section>
-
-    <section id="about" class="container section" aria-labelledby="about-title">
-      <h3 id="about-title">About</h3>
-      <p>This demo explains fundamental elements of information systems: components, data, processes, and how organizations use technology to support decision-making.</p>
-    </section>
-
-    <section id="topics" class="container section" aria-labelledby="topics-title">
-      <h3 id="topics-title">Topics</h3>
-      <ul class="topics-list">
-        <li><strong>Hardware &amp; Software:</strong> Devices and applications that process information.</li>
-        <li><strong>Data &amp; Information:</strong> Capturing, storing, and interpreting data.</li>
-        <li><strong>Processes:</strong> Workflows that transform data into outcomes.</li>
-        <li><strong>People &amp; Organization:</strong> Roles, governance, and policies.</li>
-      </ul>
-    </section>
-
   </main>
 
   <footer class="site-footer">
@@ -54,11 +40,13 @@
         <a href="https://github.com/Catnip56A" target="_blank" rel="noopener">GitHub</a>
         &nbsp;·&nbsp;
         <a href="https://www.codecademy.com/profiles/micro4776433284" target="_blank" rel="noopener">Codecademy</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/Catnip56A/Principles-of-InformationSystems" target="_blank" rel="noopener">Source Code</a>
       </p>
     </div>
   </footer>
 +
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

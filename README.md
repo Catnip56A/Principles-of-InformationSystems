@@ -1,23 +1,45 @@
-# Principles of Information Systems — Demo Site
+# Principles of Information Systems
 
-This is a very small static demo site created as an example.
+A clean, organized portfolio website for Magsud Abbaszade.
 
-Files:
-- `index.html` — main page
-- `styles.css` — simple stylesheet
-- `script.js` — small JS for mobile nav and form behavior
+## Project Structure
 
-How to view:
-- Open `index.html` directly in your browser, or run a simple local server.
-
-Quick local server (PowerShell):
-
-```powershell
-# Python 3 built-in server
-python -m http.server 8000; Start-Process "http://localhost:8000"
-
-# Or using Node (if installed)
-# npx http-server -c-1 . -p 8000
+```
+.
+├── index.html              # Home page
+├── pages/
+│   ├── about.html         # About page
+│   └── projects.html      # Projects page
+├── css/
+│   └── style.css          # Main stylesheet
+├── js/
+│   └── script.js          # Main script (mobile nav)
+├── assets/
+│   └── profile.jpg        # Profile photo (add manually)
+└── README.md              # This file
 ```
 
-Want me to add more content, small exercises, or host this on GitHub Pages? Open an issue or tell me what you'd like next.
+## Quick Start
+
+1. **Add your profile photo:**
+   - Save `profile.jpg` to the `assets/` folder
+
+2. **View locally:**
+   ```powershell
+   python -m http.server 8000
+   Start-Process "http://localhost:8000"
+   ```
+
+3. **Navigate:**
+   - Home: `http://localhost:8000/`
+   - About: `http://localhost:8000/pages/about.html`
+   - Projects: `http://localhost:8000/pages/projects.html`
+
+## Links
+
+- [GitHub](https://github.com/Catnip56A)
+- [Codecademy](https://www.codecademy.com/profiles/micro4776433284)
+
+---
+
+*Updated: November 20, 2025*

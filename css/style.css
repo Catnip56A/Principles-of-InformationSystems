@@ -28,3 +28,12 @@ label{font-weight:600}
 .site-footer .footer-links{margin:0.5rem 0 0;font-size:0.95rem}
 .site-footer .footer-links a{color:var(--accent);text-decoration:none}
 .site-footer .footer-links a:hover{text-decoration:underline}
+
+/* Profile section */
+.profile-section{display:flex;align-items:center;gap:2rem;padding:2rem 0}
+.profile-photo{width:200px;height:200px;border-radius:8px;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.profile-bio h2{margin:0 0 0.5rem}
+.profile-bio p{margin:0;color:var(--muted);font-size:1.1rem}
+
+/* Responsive */
+@media (max-width:700px){.profile-section{flex-direction:column;text-align:center}.profile-photo{width:160px;height:160px}}
