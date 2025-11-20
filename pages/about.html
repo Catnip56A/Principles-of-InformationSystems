@@ -23,15 +23,29 @@
 
   <main>
     <section class="container section" aria-labelledby="about-title">
-      <h2 id="about-title">About This Demo</h2>
-      <p>This small static site demonstrates a simple structure for documenting principles of information systems. It includes pages for the home overview, an about page, and a projects showcase.</p>
-      <h3>Goals</h3>
-      <ul>
-        <li>Provide clear, accessible explanations.</li>
-        <li>Offer example projects for hands-on learning.</li>
-        <li>Keep the site minimal and easy to extend.</li>
-      </ul>
+      <h2 id="about-title">This is a gallery of developer's qualifications</h2>
     </section>
+
+    <section class="container section" aria-labelledby="gallery-title">
+      <h3 id="gallery-title">Gallery</h3>
+      <div class="gallery-scroll">
+        <div class="gallery-item" role="button" tabindex="0" data-src="../assets/image1.png" aria-label="Click to expand Gallery image 1">
+          <img src="../assets/image1.png" alt="Gallery image 1">
+        </div>
+        <div class="gallery-item" role="button" tabindex="0" data-src="../assets/image2.jpg" aria-label="Click to expand Gallery image 2">
+          <img src="../assets/image2.jpg" alt="Gallery image 2">
+        </div>
+        <div class="gallery-item" role="button" tabindex="0" data-src="../assets/image3.jpg" aria-label="Click to expand Gallery image 3">
+          <img src="../assets/image3.jpg" alt="Gallery image 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal" role="dialog" aria-hidden="true">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <img id="modal-image" src="" alt="Expanded image">
+    </div>
   </main>
 
   <footer class="site-footer">
