@@ -23,3 +23,8 @@ label{font-weight:600}
 
 /* Responsive */
 @media (max-width:700px){.main-nav{display:none;position:absolute;right:1rem;top:64px;background:#fff;padding:1rem;border:1px solid #e6e9ee;border-radius:6px;box-shadow:0 6px 18px rgba(20,30,60,.06)}.nav-toggle{display:block}.site-header .container{position:relative}}
+
+/* Footer links */
+.site-footer .footer-links{margin:0.5rem 0 0;font-size:0.95rem}
+.site-footer .footer-links a{color:var(--accent);text-decoration:none}
+.site-footer .footer-links a:hover{text-decoration:underline}
