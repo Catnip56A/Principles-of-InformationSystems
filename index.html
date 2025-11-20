@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Short demo site for Principles of Information Systems.">
+  <title>Principles of Information Systems — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Principles of Information Systems</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container">
+        <h2 id="hero-title">Core concepts of information systems</h2>
+        <p>Concise explanations and examples for students and curious learners.</p>
+        <a class="btn" href="#topics">Explore Topics</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section" aria-labelledby="about-title">
+      <h3 id="about-title">About</h3>
+      <p>This demo explains fundamental elements of information systems: components, data, processes, and how organizations use technology to support decision-making.</p>
+    </section>
+
+    <section id="topics" class="container section" aria-labelledby="topics-title">
+      <h3 id="topics-title">Topics</h3>
+      <ul class="topics-list">
+        <li><strong>Hardware &amp; Software:</strong> Devices and applications that process information.</li>
+        <li><strong>Data &amp; Information:</strong> Capturing, storing, and interpreting data.</li>
+        <li><strong>Processes:</strong> Workflows that transform data into outcomes.</li>
+        <li><strong>People &amp; Organization:</strong> Roles, governance, and policies.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact</h3>
+      <p>If you'd like more examples or exercises, send a quick note below (demo only — this won't be sent anywhere).</p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p id="form-status" class="form-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Principles of Information Systems — Demo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

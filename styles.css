@@ -1,0 +1,25 @@
+/* Basic reset and layout */
+:root{--accent:#2b7be4;--muted:#666;--bg:#f6f8fb}
+*{box-sizing:border-box}body{font-family:Segoe UI,Arial,Helvetica,sans-serif;line-height:1.5;margin:0;color:#222;background:var(--bg)}.container{max-width:980px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ee}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.logo{font-size:1.1rem;margin:0}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.4rem}
+.main-nav{margin-left:auto;display:flex;gap:1rem}
+.main-nav a{color:var(--muted);text-decoration:none}
+.hero{padding:3rem 0;background:linear-gradient(180deg, #fff, #f4f7fb)}
+.hero h2{margin:0 0 .5rem}
+.btn{display:inline-block;padding:.5rem 1rem;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none}
+.section{padding:2rem 0}
+.topics-list{list-style:none;padding:0;margin:0}
+.topics-list li{padding:.4rem 0;border-bottom:1px dashed #e6e9ee}
+.site-footer{padding:1rem 0;background:#fff;border-top:1px solid #e6e9ee;margin-top:2rem;text-align:center;color:var(--muted)}
+
+/* Form */
+form{display:grid;gap:.5rem;max-width:540px}
+input,textarea{padding:.5rem;border:1px solid #d6d9df;border-radius:4px}
+label{font-weight:600}
+.form-status{margin-top:.5rem;color:green}
+
+/* Responsive */
+@media (max-width:700px){.main-nav{display:none;position:absolute;right:1rem;top:64px;background:#fff;padding:1rem;border:1px solid #e6e9ee;border-radius:6px;box-shadow:0 6px 18px rgba(20,30,60,.06)}.nav-toggle{display:block}.site-header .container{position:relative}}
