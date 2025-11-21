@@ -1,3 +1,19 @@
+// Dark mode initialization and toggle
+const html = document.documentElement;
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+if(themeToggle){
+  themeToggle.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+  });
+}
+
 // Mobile nav toggle (keeps aria-expanded in sync)
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');
